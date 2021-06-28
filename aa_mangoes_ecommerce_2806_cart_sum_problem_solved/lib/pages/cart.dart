@@ -1,0 +1,59 @@
+import 'package:flutter/material.dart';
+import 'package:aa_mangoes_ecommerce/components/cart_products.dart';
+import 'package:aa_mangoes_ecommerce/components/globals.dart';
+
+// var cart_list = [];
+
+class Cart extends StatefulWidget {
+  @override
+  _CartState createState() => _CartState();
+}
+
+class _CartState extends State<Cart> {
+  //========== HERE IS THE CALLBACK PASSED TO CART_PRODUCTS WIDGET ==========
+  void _updateCartTotal(int count){
+    setState(() {
+      cartTotalValue = count;
+    });
+  }
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: new AppBar(
+        elevation: 0.0,
+        backgroundColor: Color.fromARGB(255, 255, 130, 67),
+        title: new Text("Cart"),
+        actions: <Widget>[
+          new IconButton(
+              icon: Icon(
+                Icons.search,
+                color: Colors.white,
+              ),
+              onPressed: () {}),
+        ],
+      ),
+      body: new Cart_Products(update: _updateCartTotal),//PASSING CALLBACK TO CONSTRUCTER
+      bottomNavigationBar: new Container(
+        color: Colors.white,
+        child: new Row(
+          children: <Widget>[
+            Expanded(
+                child: new ListTile(
+              title: new Text("Total:"),
+              subtitle: new Text("₹${cartTotalValue}"),
+            )),
+            Expanded(
+                child: new MaterialButton(
+              onPressed: () {},
+              child: new Text(
+                "Check Out",
+                style: TextStyle(color: Colors.white),
+              ),
+              color: Color.fromARGB(255, 255, 130, 67),
+            ))
+          ],
+        ),
+      ),
+    );
+  }
+}
