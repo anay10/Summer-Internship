@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "775257558326",
+    "project_id": "summerinternship-b24d8",
+    "storage_bucket": "summerinternship-b24d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775257558326:android:3223057b95b1ce18597797",
+        "android_client_info": {
+          "package_name": "com.example.aa_mangoes_ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775257558326-v0e8300o76184bv1dbim72dj6sdrt1hi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aa_mangoes_ecommerce",
+            "certificate_hash": "e1c915cd40e3cfd2bc7b40e586f4268aee694aa2"
+          }
+        },
+        {
+          "client_id": "775257558326-4hv8232mvh0mdr9jcauk1u4ns7htf5f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQJqabonWMts3woGA80fmHVCDhUjVwGos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775257558326-4hv8232mvh0mdr9jcauk1u4ns7htf5f1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
